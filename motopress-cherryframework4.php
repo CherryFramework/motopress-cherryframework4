@@ -7,6 +7,7 @@
 * Author: MotoPress & Cherry Team
 * Author URI: http://www.getmotopress.com/
 * License: GPL2 or later
+* Text Domain: motopress-cherryframework4
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
