@@ -26,7 +26,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 		 * Register admin-specific javascript.
 		 */
 		public function admin_register_assets() {
-			wp_register_script( 'custom-cherry-shortcodes-generator', plugins_url( 'assets/js/scripts.js', __FILE__ ), array( 'cherry-shortcodes-generator' ), '1.0.0', true );
+			wp_register_script( 'custom-cherry-shortcodes-generator', plugins_url( MOTO_CHERRY4_SLUG . '/assets/js/scripts.js' ), array( 'cherry-shortcodes-generator' ), '1.0.0', true );
 		}
 
 		/**

@@ -557,7 +557,7 @@ class MPCE_Cherry4 {
 			return;
 		}
 
-		require_once( plugin_dir_path( __FILE__ ) . '/custom-cherry-shortcodes.php' );
+		require_once( plugin_dir_path( __FILE__ ) . '/inc/custom-cherry-shortcodes.php' );
 	}
 
 }
