@@ -513,7 +513,7 @@ class MPCE_Cherry4 {
 	}
 
 	public function mpce_cherry4_scripts() {
-		wp_register_script( 'mpce-cherry-controller', plugins_url('assets/controller.js', __FILE__), array('jquery'), '1.0', true);
+		wp_register_script( 'mpce-cherry-controller', plugins_url('assets/js/controller.js', __FILE__), array('jquery'), '1.0', true);
 		wp_localize_script( 'mpce-cherry-controller', 'mpce_cherry4_prefix', $this->prefix );
 		wp_enqueue_script( 'mpce-cherry-controller');
 
