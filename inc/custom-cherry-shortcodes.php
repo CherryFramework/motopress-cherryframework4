@@ -198,7 +198,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 					break;
 
 				default:
-					$default_bg_type = true;
+					$default_bg_type = true && ( 'full-width' == $type );
 					$container = ( 'fixed-width' == $type ) ? '<div class="container"><div class="%2$s">%1$s</div></div>' : '%s';
 
 					$_content = sprintf( $container, do_shortcode( $content ), $row_class );
