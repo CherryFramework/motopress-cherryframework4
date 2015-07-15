@@ -106,6 +106,11 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 						'name'    => __( 'Background Type', 'cherry-shortcodes' ),
 						'desc'    => __( 'Select Background Type', 'cherry-shortcodes' ),
 					),
+					'anchor' => array(
+						'default' => '',
+						'name'    => __( 'Anchor', 'cherry-shortcodes' ),
+						'desc'    => __( 'This option defines menu item marker.', 'cherry-shortcodes' ),
+					),
 					'class' => array(
 						'default' => '',
 						'name'    => __( 'Class', 'cherry-shortcodes' ),
@@ -138,9 +143,10 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 			$original_atts = $atts;
 
 			$atts = shortcode_atts( array(
-				'type'    => 'full-width',
-				'bg_type' => 'none',
-				'class'   => '',
+				'type'		=> 'full-width',
+				'bg_type'	=> 'none',
+				'anchor'	=> '',
+				'class'		=> '',
 
 				// image
 				'preset'        => '',
@@ -165,8 +171,20 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 			$type      = sanitize_key( $atts['type'] );
 			$bg_type   = sanitize_key( $atts['bg_type'] );
 			$class     = ( 'fixed-width' == $type ) ? '' : cherry_esc_class_attr( $atts );
+			$anchor_data = '';
 			$row_class = apply_filters( 'cherry_shortcodes_output_row_class', 'row', $atts );
 			$output    = false;
+
+			if( $atts[ 'anchor' ] ){
+				$anchor = preg_replace( '/[^A-Za-z0-9-_]/', '',  $atts[ 'anchor' ] );
+				$anchor = str_replace( ' ', '-', $anchor );
+
+				$id = 'data-id="' . $anchor . '" ';
+				$anchor_data = 'data-anchor="true"';
+
+				wp_localize_script( 'page-anchor', 'anchor_scroll_speed', array( apply_filters( 'cherry_anchor_scroll_speed', 300 ) ) );
+				cherry_query_asset( 'js', 'page-anchor' );
+			}
 
 			$container = ( 'fixed-width' == $type ) ? '<div class="container"><div class="%2$s">%1$s</div></div>' : '<div class="container-fluid"><div class="%2$s">%1$s</div></div>';
 
@@ -204,8 +222,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 					$_content = sprintf( $container, do_shortcode( $content ), $row_class );
 					break;
 			}
-
-			$output = '<div class="' . ( $default_bg_type ? $row_class : 'row' ) . cherry_esc_class_attr( $atts ) . '">' . $_content . '</div>';
+			$output = '<div class="' . ( $default_bg_type ? $row_class : 'row' ) . cherry_esc_class_attr( $atts ) . '" ' . $id . $anchor_data . ' >' . $_content . '</div>';
 
 			return apply_filters( 'cherry_shortcodes_output', $output, $atts, 'row' );
 		}
