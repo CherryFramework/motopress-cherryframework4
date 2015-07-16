@@ -168,12 +168,14 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 				'ogv'               => '',
 			), $atts, 'row' );
 
-			$type      = sanitize_key( $atts['type'] );
-			$bg_type   = sanitize_key( $atts['bg_type'] );
-			$class     = ( 'fixed-width' == $type ) ? '' : cherry_esc_class_attr( $atts );
-			$anchor_data = '';
-			$row_class = apply_filters( 'cherry_shortcodes_output_row_class', 'row', $atts );
-			$output    = false;
+			$type			= sanitize_key( $atts['type'] );
+			$bg_type		= sanitize_key( $atts['bg_type'] );
+			$class			= ( 'fixed-width' == $type ) ? '' : cherry_esc_class_attr( $atts );
+			$anchor_data	= '';
+			$row_class		= apply_filters( 'cherry_shortcodes_output_row_class', 'row', $atts );
+			$output			= false;
+			$id				= '';
+			$anchor_data	= '';
 
 			if( $atts[ 'anchor' ] ){
 				$anchor = preg_replace( '/[^A-Za-z0-9-_]/', '',  $atts[ 'anchor' ] );
