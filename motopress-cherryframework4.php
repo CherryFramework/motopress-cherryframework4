@@ -360,11 +360,11 @@ class MPCE_Cherry4 {
 
 				switch ($type) {
 					case 'select': {
-						$param['type'] = (isset($att['multiple']) && $att['multiple'] == TRUE) ? 'select-multiple' : 'select';
-						$param['label'] = $att['name'];
-						$param['default'] = $att['default'];
-						$param['list'] = $att['values'];
-						$param['description'] = $att['desc'];
+						$param['type']        = (isset($att['multiple']) && $att['multiple'] == TRUE) ? 'select-multiple' : 'select';
+						$param['label']       = $att['name'];
+						$param['default']     = $att['default'];
+						$param['list']        = $att['values'];
+						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
 						break;
 					}
 					case 'responsive': {
@@ -384,53 +384,53 @@ class MPCE_Cherry4 {
 						break;
 					}
 					case 'color': {
-						$param['type'] = 'color-picker';
-						$param['label'] = $att['name'];
-						$param['description'] = $att['desc'];
+						$param['type']        = 'color-picker';
+						$param['label']       = $att['name'];
+						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
 						//$param['default'] = $att['default'];
 						break;
 					}
 					case 'slider': {
-						$param['type'] = 'slider';
-						$param['label'] = $att['name'];
-						$param['description'] = $att['desc'];
-						$param['default'] = $att['default'];
-						$param['min'] = $att['min'];
-						$param['max'] = $att['max'];
+						$param['type']        = 'slider';
+						$param['label']       = $att['name'];
+						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
+						$param['default']     = $att['default'];
+						$param['min']         = $att['min'];
+						$param['max']         = $att['max'];
 						break;
 					}
 					case 'number': {
-						$param['type'] = 'spinner';
-						$param['label'] = $att['name'];
-						$param['description'] = $att['desc'];
-						$param['default'] = $att['default'];
-						$param['min'] = $att['min'];
-						$param['max'] = $att['max'];
+						$param['type']        = 'spinner';
+						$param['label']       = $att['name'];
+						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
+						$param['default']     = $att['default'];
+						$param['min']         = $att['min'];
+						$param['max']         = $att['max'];
 						break;
 					}
 					case 'bool': {
-						$param['type'] = 'radio-buttons';
-						$param['label'] = $att['name'];
-						$param['description'] = $att['desc'];
-						$param['default'] = $att['default'];
-						$param['list'] = array(
+						$param['type']        = 'radio-buttons';
+						$param['label']       = $att['name'];
+						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
+						$param['default']     = $att['default'];
+						$param['list']        = array(
 							'yes' => __('Yes'),
-							'no' => __('No'),
+							'no'  => __('No'),
 						);
 						break;
 					}
 					case 'upload': {
-						$param['type'] = 'media';
-						$param['label'] = $att['name'];
-						$param['description'] = $att['desc'];
-						$param['default'] = $att['default'];
+						$param['type']        = 'media';
+						$param['label']       = $att['name'];
+						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
+						$param['default']     = $att['default'];
 						break;
 					}
 					case 'icon': {
-						$param['type'] = 'icon-picker';
-						$param['label'] = $att['name'];
-						$param['description'] = $att['desc'];
-						$param['default'] = '';
+						$param['type']        = 'icon-picker';
+						$param['label']       = $att['name'];
+						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
+						$param['default']     = '';
 
 						//delete_transient('mpce-cherry-icons-list');
 						$icons_list = get_transient('mpce-cherry-icons-list');
@@ -466,9 +466,9 @@ class MPCE_Cherry4 {
 						$param['type'] = 'text';
 						if ( $att_id == 'url' )
 							$param['type'] = 'link';
-						$param['label'] = $att['name'];
-						$param['default'] = $att['default'];
-						$param['description'] =  $att['desc'];
+						$param['label']       = $att['name'];
+						$param['default']     = $att['default'];
+						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
 					}
 				}
 
