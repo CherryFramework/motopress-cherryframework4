@@ -3,7 +3,7 @@
 * Plugin Name: MotoPress and CherryFramework 4 Integration
 * Plugin URI: http://www.getmotopress.com/
 * Description: Extend MotoPress Content Editor plugin with CherryFramework 4 shortcodes.
-* Version: 1.1.1
+* Version: 1.1.2
 * Author: MotoPress & Cherry Team
 * Author URI: http://www.getmotopress.com/
 * License: GPL2 or later
@@ -55,7 +55,7 @@ class MPCE_Cherry4 {
 	}
 
 	public function constants() {
-		define( 'MOTO_CHERRY4_VERSION', '1.1.1' );
+		define( 'MOTO_CHERRY4_VERSION', '1.1.2' );
 		define( 'MOTO_CHERRY4_SLUG', basename( dirname( __FILE__ ) ) );
 	}
 
@@ -146,7 +146,8 @@ class MPCE_Cherry4 {
 				'shortcode' => $this->prefix . 'col',
 				'inner' => $this->prefix . 'col_inner',
 				'class' => 'col-md-',
-				'attr' => 'size_md'
+				'attr' => 'size_md',
+				'custom_class_attr' => 'class'
 			)
 		));
 
@@ -594,7 +595,9 @@ class MotoPress_Cherry4_Shortcode_Atts_Filter {
 	}
 
 	private function isContentEditor() {
+		global $isMotoPressCEPage;
 		if (
+			(isset($isMotoPressCEPage) && $isMotoPressCEPage === TRUE) ||
 			(isset($_GET['motopress-ce']) && $_GET['motopress-ce'] === '1') ||
 			(isset($_POST['action']) && ( $_POST['action'] == 'motopress_ce_render_shortcode' ))
 		) {
