@@ -168,16 +168,16 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 				'ogv'               => '',
 			), $atts, 'row' );
 
-			$type			= sanitize_key( $atts['type'] );
-			$bg_type		= sanitize_key( $atts['bg_type'] );
-			$class			= ( 'fixed-width' == $type ) ? '' : cherry_esc_class_attr( $atts );
-			$anchor_data	= '';
-			$row_class		= apply_filters( 'cherry_shortcodes_output_row_class', 'row', $atts );
-			$output			= false;
-			$id				= '';
-			$anchor_data	= '';
+			$type        = sanitize_key( $atts['type'] );
+			$bg_type     = sanitize_key( $atts['bg_type'] );
+			$class       = ( 'fixed-width' == $type ) ? '' : cherry_esc_class_attr( $atts );
+			$anchor_data = '';
+			$row_class   = apply_filters( 'cherry_shortcodes_output_row_class', 'row', $atts );
+			$output      = false;
+			$id          = '';
+			$anchor_data = '';
 
-			if( $atts[ 'anchor' ] ){
+			if ( $atts[ 'anchor' ] ) {
 				$anchor = preg_replace( '/[^A-Za-z0-9-_]/', '',  $atts[ 'anchor' ] );
 				$anchor = str_replace( ' ', '-', $anchor );
 
@@ -224,7 +224,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 					$_content = sprintf( $container, do_shortcode( $content ), $row_class );
 					break;
 			}
-			$output = '<div class="' . ( $default_bg_type ? $row_class : 'row' ) . cherry_esc_class_attr( $atts ) . '" ' . $id . $anchor_data . ' >' . $_content . '</div>';
+			$output = '<div class="' . ( $default_bg_type ? $row_class : 'row' ) . cherry_esc_class_attr( $atts ) . '" ' . $id . $anchor_data . '>' . $_content . '</div>';
 
 			return apply_filters( 'cherry_shortcodes_output', $output, $atts, 'row' );
 		}
