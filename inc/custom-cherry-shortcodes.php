@@ -581,7 +581,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 					break;
 			}
 
-			return $atts;
+			return apply_filters( 'custom_cherry_shortcodes_bg_atts', $atts, $bg_type );
 		}
 
 		public function mpce_custom_cherry_shortcodes_library_extend($motopressCELibrary) {
