@@ -155,6 +155,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 				'bg_position'   => 'center',
 				'bg_repeat'     => 'no-repeat',
 				'bg_attachment' => 'scroll',
+				'bg_size'       => 'auto',
 
 				// parallax image
 				'speed'             => '1.5',
@@ -485,6 +486,17 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 							'default' => 'scroll',
 							'name'    => __( 'Background image attachment', 'cherry-shortcodes' ),
 							'desc'    => __( 'Select background image attachment', 'cherry-shortcodes' ),
+						),
+						'bg_size' => array(
+							'type'   => 'select',
+							'values' => array(
+								'auto'    => __( 'Auto', 'cherry-shortcodes' ),
+								'cover'   => __( 'Cover', 'cherry-shortcodes' ),
+								'contain' => __( 'Contain', 'cherry-shortcodes' ),
+							),
+							'default' => 'auto',
+							'name'    => __( 'Background image size', 'cherry-shortcodes' ),
+							'desc'    => __( 'Select background image size', 'cherry-shortcodes' ),
 						),
 					);
 					break;
