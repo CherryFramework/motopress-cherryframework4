@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 	$('body').on('change', '#cherry-generator-attr-bg_type', function() {
 		var $bg_type_values = $(this),
-			bg_type = $bg_type_values.val();
+			bg_type = $bg_type_values.val(),
 			$container = $('.cherry-generator-attr-right-container');
 		// Load new options
 		window.cherry_generator_get_bg_type = $.ajax({
@@ -28,15 +28,21 @@ jQuery(document).ready(function($) {
 				$('.cherry-generator-loading').remove();
 
 				// Init color pickers
-				$('.cherry-generator-select-color').each(function(index) {
-					$(this).find('.cherry-generator-select-color-wheel').filter(':first').farbtastic('.cherry-generator-select-color-value:eq(' + index + ')');
-					$(this).find('.cherry-generator-select-color-value').focus(function() {
-						$('.cherry-generator-select-color-wheel:eq(' + index + ')').show();
+				if ( $.isFunction( jQuery.fn.farbtastic ) ) {
+					$('.cherry-generator-select-color').each(function(index) {
+						$(this).find('.cherry-generator-select-color-wheel').filter(':first').farbtastic('.cherry-generator-select-color-value:eq(' + index + ')');
+						$(this).find('.cherry-generator-select-color-value').focus(function() {
+							$('.cherry-generator-select-color-wheel:eq(' + index + ')').show();
+						});
+						$(this).find('.cherry-generator-select-color-value').blur(function() {
+							$('.cherry-generator-select-color-wheel:eq(' + index + ')').hide();
+						});
 					});
-					$(this).find('.cherry-generator-select-color-value').blur(function() {
-						$('.cherry-generator-select-color-wheel:eq(' + index + ')').hide();
+				} else {
+					$('.cherry-generator-select-color').each(function(index) {
+						$(this).find('.cherry-generator-select-color-value').wpColorPicker();
 					});
-				});
+				}
 
 				// Init media buttons
 				$('.cherry-generator-upload-button').each(function() {
