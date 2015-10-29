@@ -1,14 +1,14 @@
 <?php
 /**
-* Plugin Name: MotoPress and CherryFramework 4 Integration
-* Plugin URI: http://www.getmotopress.com/
-* Description: Extend MotoPress Content Editor plugin with CherryFramework 4 shortcodes.
-* Version: 1.1.5
-* Author: MotoPress & Cherry Team
-* Author URI: http://www.getmotopress.com/
-* License: GPL2 or later
-* Text Domain: motopress-cherryframework4
-*/
+ * Plugin Name: MotoPress and CherryFramework 4 Integration
+ * Plugin URI: http://www.getmotopress.com/
+ * Description: Extend MotoPress Content Editor plugin with CherryFramework 4 shortcodes.
+ * Version: 1.1.5
+ * Author: MotoPress & Cherry Team
+ * Author URI: http://www.getmotopress.com/
+ * License: GPL2 or later
+ * Text Domain: motopress-cherryframework4
+ */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
@@ -212,16 +212,16 @@ class MPCE_Cherry4 {
 					'saveInContent' => 'true'
 				);
 
-			   // custom templates
-			   /*if ($id == 'testimonials') {*/
-					/*require_once( CHERRY_TEMPLATER_DIR . 'admin/class-cherry-shortcode-editor.php' );
-					$templates = Cherry_Shortcode_Editor::dirlist( $id );
-					if ($templates) {
-						var_export($id);
-						var_export($templates);
-					}*/
-					/*exit;
+				// custom templates
+				/*if ($id == 'testimonials') {*/
+				/*require_once( CHERRY_TEMPLATER_DIR . 'admin/class-cherry-shortcode-editor.php' );
+				$templates = Cherry_Shortcode_Editor::dirlist( $id );
+				if ($templates) {
+					var_export($id);
+					var_export($templates);
 				}*/
+				/*exit;
+			}*/
 			}
 
 			$mpObject = new MPCEObject($shortcode_id, $label, $icon, $params, 0, $closeType);
@@ -287,26 +287,26 @@ class MPCE_Cherry4 {
 						'event' => 'click'
 					)
 				)*/
-			/*)
-		);
-		$tabs_parameters = $this->cherry_attributes_to_parameters($shortcodes['tabs']['atts'], $tabs_parameters);
-		$tabsObj = new MPCEObject($this->prefix . 'tabs', 'Tabs', null, $tabs_parameters, 11, MPCEObject::ENCLOSED);
+		/*)
+	);
+	$tabs_parameters = $this->cherry_attributes_to_parameters($shortcodes['tabs']['atts'], $tabs_parameters);
+	$tabsObj = new MPCEObject($this->prefix . 'tabs', 'Tabs', null, $tabs_parameters, 11, MPCEObject::ENCLOSED);
 
-		$tab_parameters = array(
-			'content' => array(
-				'type' => 'longtext-tinymce',
-				'label' => __( 'Content', 'cherry-shortcodes' ),
-				'text' => empty($motopressCELang) ? 'Open in WordPress Editor' : $motopressCELang->CEOpenInWPEditor,
-				'default' => 'Tab Content',
-				'saveInContent' => 'true'
-			)
-		);
-		$tab_parameters = $this->cherry_attributes_to_parameters($shortcodes['tab']['atts'], $tab_parameters);
-		$tabItemObj = new MPCEObject($this->prefix . 'tab', 'Tab', null, $tab_parameters, null, MPCEObject::ENCLOSED, MPCEObject::RESIZE_NONE, false);
+	$tab_parameters = array(
+		'content' => array(
+			'type' => 'longtext-tinymce',
+			'label' => __( 'Content', 'cherry-shortcodes' ),
+			'text' => empty($motopressCELang) ? 'Open in WordPress Editor' : $motopressCELang->CEOpenInWPEditor,
+			'default' => 'Tab Content',
+			'saveInContent' => 'true'
+		)
+	);
+	$tab_parameters = $this->cherry_attributes_to_parameters($shortcodes['tab']['atts'], $tab_parameters);
+	$tabItemObj = new MPCEObject($this->prefix . 'tab', 'Tab', null, $tab_parameters, null, MPCEObject::ENCLOSED, MPCEObject::RESIZE_NONE, false);
 
-		/*echo "<pre>";
-		var_export($tabItemObj);
-		exit;*/
+	/*echo "<pre>";
+	var_export($tabItemObj);
+	exit;*/
 
 		/*$motopressCELibrary->addObject($tabsObj);
 		$motopressCELibrary->addObject($tabItemObj);*/
@@ -333,6 +333,9 @@ class MPCE_Cherry4 {
 		$page_templates = array('landing_page', 'call_to_action_page', 'feature_list', 'description_page', 'service_list', 'product_page');
 		foreach ($page_templates as $page_template)
 			$motopressCELibrary->removeTemplate( MPCEShortcode::PREFIX . $page_template );
+
+		//add cherry-predefined templates
+		require_once ( plugin_dir_path( __FILE__ ) . '/inc/ce/custom-templates.php' );
 
 	}
 
@@ -448,9 +451,9 @@ class MPCE_Cherry4 {
 							foreach($icons as $icon) {
 								$icons_list['icon:' . $icon] =
 									array(
-									'label' => str_replace('fa fa-', '', $icon),
-									'class' => $icon
-								);
+										'label' => str_replace('fa fa-', '', $icon),
+										'class' => $icon
+									);
 							}
 							//asort($icons_list);
 
@@ -464,12 +467,12 @@ class MPCE_Cherry4 {
 						break;
 					}
 					default: {
-						$param['type'] = 'text';
-						if ( $att_id == 'url' )
-							$param['type'] = 'link';
-						$param['label']       = $att['name'];
-						$param['default']     = $att['default'];
-						$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
+					$param['type'] = 'text';
+					if ( $att_id == 'url' )
+						$param['type'] = 'link';
+					$param['label']       = $att['name'];
+					$param['default']     = $att['default'];
+					$param['description'] = empty( $att['desc'] ) ? '' : $att['desc'];
 					}
 				}
 
@@ -478,6 +481,16 @@ class MPCE_Cherry4 {
 					$templates = Cherry_Shortcode_Editor::dirlist( $shortcode );
 					if ( $templates && !empty( $templates ) ) {
 						$param['list'] = $templates;
+					}
+				}
+
+				 //Fill group list of team shortcode
+				if ($shortcode == 'team' && ($att_id == 'group')) {
+
+					$terms = get_terms( 'group' );
+					if ( ! is_wp_error( $terms ) ) {
+						$terms_list = wp_list_pluck( $terms, 'name', 'slug' );
+						$param["list"] = $terms_list;
 					}
 				}
 
@@ -494,19 +507,19 @@ class MPCE_Cherry4 {
 		$size_label = $size;
 		switch ($size) {
 			case '_xs': {
-				$size_label = __( 'Extra small devices (Phones)', 'cherry' );
+				$size_label = __( 'Extra small devices (Phones)', 'motopress-cherryframework4' );
 				break;
 			}
 			case '_sm': {
-				$size_label = __( 'Small devices (Tablets)', 'cherry' );
+				$size_label = __( 'Small devices (Tablets)', 'motopress-cherryframework4' );
 				break;
 			}
 			case '_md': {
-				$size_label = __( 'Medium devices (Desktops)', 'cherry' );
+				$size_label = __( 'Medium devices (Desktops)', 'motopress-cherryframework4' );
 				break;
 			}
 			case '_lg': {
-				$size_label = __( 'Large devices (Desktops)', 'cherry' );
+				$size_label = __( 'Large devices (Desktops)', 'motopress-cherryframework4' );
 				break;
 			}
 		}
@@ -579,10 +592,11 @@ class MotoPress_Cherry4_Shortcode_Atts_Filter {
 	{
 
 		$basicClasses = trim( MPCEShortcode::getBasicClasses($this->prefix . $this->shortcode) );
-		if ( !$this->isContentEditor() && in_array( $this->shortcode, array('row', 'row_inner', 'col', 'col_inner') ) ) {
+		if ( !$this->isContentEditor() && in_array( $this->shortcode, array('row', 'row_inner', 'col', 'col_inner') )
+			&& !(isset($_POST['action']) && ( $_POST['action'] == 'motopress_ce_render_template' ))) {
+
 			$basicClasses = '';
 		}
-		//var_export($basicClasses); exit;
 
 		$mpClasses =
 			((isset($atts['margin'])) ? (trim( MPCEShortcode::getMarginClasses($atts['margin']) )) : '') . ' ' .
