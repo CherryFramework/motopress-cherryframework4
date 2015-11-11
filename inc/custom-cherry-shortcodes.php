@@ -26,7 +26,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 		 * Register admin-specific javascript.
 		 */
 		public function admin_register_assets() {
-			wp_register_script( 'custom-cherry-shortcodes-generator', plugins_url( MOTO_CHERRY4_SLUG . '/assets/js/scripts.js' ), array( 'cherry-shortcodes-generator' ), '1.0.0', true );
+			wp_register_script( 'custom-cherry-shortcodes-generator', plugins_url( MOTO_CHERRY4_SLUG . '/assets/js/scripts.js' ), array( 'cherry-shortcodes-generator' ), MOTO_CHERRY4_VERSION, true );
 		}
 
 		/**
@@ -143,10 +143,10 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 			$original_atts = $atts;
 
 			$atts = shortcode_atts( array(
-				'type'		=> 'full-width',
-				'bg_type'	=> 'none',
-				'anchor'	=> '',
-				'class'		=> '',
+				'type'    => 'full-width',
+				'bg_type' => 'none',
+				'anchor'  => '',
+				'class'   => '',
 
 				// image
 				'preset'        => '',
@@ -262,6 +262,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 				'bg_position'   => 'center',
 				'bg_repeat'     => 'no-repeat',
 				'bg_attachment' => 'scroll',
+				'bg_size'       => 'auto',
 			), $original_atts, 'col' );
 
 			$class = '';
