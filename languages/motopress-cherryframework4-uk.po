@@ -1,0 +1,643 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: motopress-cherryframework4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-05 19:21+0200\n"
+"PO-Revision-Date: 2015-11-05 19:21+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/custom-cherry-shortcodes.php:90
+msgid "Fixed Width"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:91
+msgid "Full Width"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:94
+msgid "Width Type"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:95
+msgid "Select Width Type"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:100 inc/custom-cherry-shortcodes.php:129
+msgid "None"
+msgstr "Жодного"
+
+#: inc/custom-cherry-shortcodes.php:101 inc/custom-cherry-shortcodes.php:130
+msgid "Color/Image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:102
+msgid "Parallax Image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:103
+msgid "Parallax Video"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:106 inc/custom-cherry-shortcodes.php:133
+msgid "Background Type"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:107 inc/custom-cherry-shortcodes.php:134
+msgid "Select Background Type"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:111
+msgid "Anchor"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:112
+msgid "This option defines menu item marker."
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:116
+msgid "Class"
+msgstr "Клас"
+
+#: inc/custom-cherry-shortcodes.php:117
+msgid "Extra CSS class"
+msgstr "Користувацький клас CSS"
+
+#: inc/custom-cherry-shortcodes.php:391
+msgid "Click to set this value"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:426
+msgid "No preset"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:427
+msgid "Primary"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:428
+msgid "Secondary"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:429
+msgid "Gray"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:430
+msgid "Primary border"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:431
+msgid "Secondary border"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:432
+msgid "Gray border"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:435
+msgid "Styling preset"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:436
+msgid "Select styling preset"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:442
+msgid "Background Color"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:443
+msgid "Select background color"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:448 inc/custom-cherry-shortcodes.php:509
+msgid "Background Image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:449 inc/custom-cherry-shortcodes.php:510
+msgid "Upload background image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:454
+msgid "Top Left"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:455
+msgid "Top Center"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:456
+msgid "Top Right"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:457
+msgid "Middle Left"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:458
+msgid "Middle Center"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:459
+msgid "Middle Right"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:460
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:461
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:462
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:465
+msgid "Background image position"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:466
+msgid "Select background image position"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:471
+msgid "No Repeat"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:472
+msgid "Repeat All"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:473
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:474
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:477
+msgid "Background image repeat"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:478
+msgid "Select background image repeat"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:483
+msgid "Scroll normally"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:484
+msgid "Fixed in place"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:487
+msgid "Background image attachment"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:488
+msgid "Select background image attachment"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:493
+msgid "Auto"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:494
+msgid "Cover"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:495
+msgid "Contain"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:498
+msgid "Background image size"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:499
+msgid "Select background image size"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:518 inc/custom-cherry-shortcodes.php:575
+msgid "Parallax speed"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:519 inc/custom-cherry-shortcodes.php:576
+msgid "Parallax speed value (s)"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:524 inc/custom-cherry-shortcodes.php:581
+#: motopress-cherryframework4.php:418
+msgid "Yes"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:525 inc/custom-cherry-shortcodes.php:582
+#: motopress-cherryframework4.php:419
+msgid "No"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:528 inc/custom-cherry-shortcodes.php:585
+msgid "Parallax invert"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:529 inc/custom-cherry-shortcodes.php:586
+msgid "Parallax invert direction move"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:537
+msgid "Parallax container min-height"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:538
+msgid "Container min-height value (px)"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:548
+msgid "Poster"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:549
+msgid "Upload poster image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:554
+msgid "mp4 file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:555
+msgid "URL to mp4 video-file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:560
+msgid "webm file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:561
+msgid "URL to webm video-file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:566
+msgid "ogv file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:567
+msgid "URL to ogv video-file"
+msgstr ""
+
+#: motopress-cherryframework4.php:209
+msgid "Content"
+msgstr "Вміст"
+
+#: motopress-cherryframework4.php:497
+msgid "Extra small devices (Phones)"
+msgstr ""
+
+#: motopress-cherryframework4.php:501
+msgid "Small devices (Tablets)"
+msgstr ""
+
+#: motopress-cherryframework4.php:505
+msgid "Medium devices (Desktops)"
+msgstr ""
+
+#: motopress-cherryframework4.php:509
+msgid "Large devices (Desktops)"
+msgstr ""
+
+#~ msgid "Title"
+#~ msgstr "Заголовок"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Мініатюра"
+
+#~ msgid "Testimonial Options"
+#~ msgstr "Параметри відгуків"
+
+#~ msgid "Name:"
+#~ msgstr "Ім'я:"
+
+#~ msgid "Enter author's name."
+#~ msgstr "Вкажіть ім'я автора"
+
+#~ msgid "E-mail:"
+#~ msgstr "Електронна адреса:"
+
+#~ msgid "Enter an e-mail address."
+#~ msgstr "Вкажіть електронну адресу."
+
+#~ msgid "URL:"
+#~ msgstr "Посилання:"
+
+#~ msgid "Enter the URL."
+#~ msgstr "Введіть посилання."
+
+#~ msgid "Title:"
+#~ msgstr "Заголовок:"
+
+#~ msgid "Limit:"
+#~ msgstr "Обмеження:"
+
+#~ msgid "Image Size (in pixels):"
+#~ msgstr "Розміри зображення (у пікселях):"
+
+#~ msgid "Display Author"
+#~ msgstr "Відображати автора"
+
+#~ msgid "Display Avatar"
+#~ msgstr "Відображати аватар"
+
+#~ msgid "Specific ID:"
+#~ msgstr "Певні ідентифікатори (ID):"
+
+#~ msgid "Testimonials Post IDs, separated by commas."
+#~ msgstr "Ідентифікатори (IDs) публікацій відгуків, відокремлені комами."
+
+#~ msgid "Order By:"
+#~ msgstr "Упорядкувати за:"
+
+#~ msgid "Order Direction:"
+#~ msgstr "Напрям впорядкування:"
+
+#~ msgid "Post content:"
+#~ msgstr "Вміст публікації:"
+
+#~ msgid "Content Length:"
+#~ msgstr "Довжина вмісту:"
+
+#~ msgid "Template:"
+#~ msgstr "Шаблон:"
+
+#~ msgid "Custom CSS Class:"
+#~ msgstr "Користувацький клас CSS:"
+
+#~ msgid "Testimonials posts"
+#~ msgstr "Публікації відгуків"
+
+#~ msgid ""
+#~ "You can choose if you want to display sidebars and how you want to "
+#~ "display them."
+#~ msgstr ""
+#~ "Тут можна вибрати, чи відображати бічні панелі і яким саме чином це "
+#~ "робити."
+
+#~ msgid "Left sidebar"
+#~ msgstr "Ліва бічна панель"
+
+#~ msgid "Right sidebar"
+#~ msgstr "Права бічна панель"
+
+#~ msgid "Left and right sidebar"
+#~ msgstr "Ліва та права бічні панелі"
+
+#~ msgid "Two sidebars on the left"
+#~ msgstr "Дві бічні панелі зліва"
+
+#~ msgid "Two sidebars on the right"
+#~ msgstr "Дві бічні панелі справа"
+
+#~ msgid "No sidebar"
+#~ msgstr "Жодної бічної панелі"
+
+#~ msgid "Testimonials"
+#~ msgstr "Відгуки"
+
+#~ msgid "Testimonial"
+#~ msgstr "Відгук"
+
+#~ msgid "Add New"
+#~ msgstr "Створити"
+
+#~ msgid "Add New Testimonial"
+#~ msgstr "Створити новий відгук"
+
+#~ msgid "Edit Testimonial"
+#~ msgstr "Редагувати відгук"
+
+#~ msgid "New Testimonial"
+#~ msgstr "Новий відгук"
+
+#~ msgid "View Testimonial"
+#~ msgstr "Переглянути відгук"
+
+#~ msgid "Search Testimonials"
+#~ msgstr "Шукати відгуки"
+
+#~ msgid "No testimonials found"
+#~ msgstr "Відгуків немає."
+
+#~ msgid "No testimonials found in trash"
+#~ msgstr "В кошику відгуків немає."
+
+#~ msgid "Testimonials Categories"
+#~ msgstr "Категорії відгуків"
+
+#~ msgid "Edit Category"
+#~ msgstr "Редагувати категорію"
+
+#~ msgid "Search Categories"
+#~ msgstr "Шукати категорії"
+
+#~ msgid "Popular Categories"
+#~ msgstr "Популярні категорії"
+
+#~ msgid "All Categories"
+#~ msgstr "Всі категорії"
+
+#~ msgid "Update Category"
+#~ msgstr "Оновити категорію"
+
+#~ msgid "Add New Category"
+#~ msgstr "Створити нову категорію"
+
+#~ msgid "New Category Name"
+#~ msgstr "Назва нової категорії"
+
+#~ msgid "Separate categories with commas"
+#~ msgstr "Відокремлюйте категорії комами"
+
+#~ msgid "Add or remove categories"
+#~ msgstr "Створити чи видалити категорії"
+
+#~ msgid "Choose from the most used categories"
+#~ msgstr "Обрати з найчастіше вживаних категорій"
+
+#~ msgid "No categories found."
+#~ msgstr "Категорій немає"
+
+#~ msgid "Categories"
+#~ msgstr "Категорії"
+
+#~ msgid "Limit"
+#~ msgstr "Обмеження"
+
+#~ msgid "Maximum number of posts."
+#~ msgstr "Найбільша дозволена кількість публікацій."
+
+#~ msgid "Descending"
+#~ msgstr "Спадний"
+
+#~ msgid "Ascending"
+#~ msgstr "Висхідний"
+
+#~ msgid "Order"
+#~ msgstr "Порядок"
+
+#~ msgid "Posts order"
+#~ msgstr "Порядок публікацій"
+
+#~ msgid "Post ID"
+#~ msgstr "ID публікації"
+
+#~ msgid "Post author"
+#~ msgstr "Автор публікації"
+
+#~ msgid "Post title"
+#~ msgstr "Заголовок публікації"
+
+#~ msgid "Post slug"
+#~ msgstr "Скорочення (slug) публікації"
+
+#~ msgid "Last modified date"
+#~ msgstr "Дата внесення останніх змін"
+
+#~ msgid "Post parent"
+#~ msgstr "Батьківська публікація"
+
+#~ msgid "Random"
+#~ msgstr "Випадковий"
+
+#~ msgid "Comments number"
+#~ msgstr "Кількість коментарів"
+
+#~ msgid "Menu order"
+#~ msgstr "Порядок меню"
+
+#~ msgid "Meta key values"
+#~ msgstr "Метадані"
+
+#~ msgid "Order by"
+#~ msgstr "Упорядкувати за"
+
+#~ msgid "Order posts by"
+#~ msgstr "Упорядкувати публікації за"
+
+#~ msgid "Category"
+#~ msgstr "Категорія"
+
+#~ msgid "Select category to show testimonials from"
+#~ msgstr "Оберіть категорії публікацій відгуків, що будуть відображатись"
+
+#~ msgid "Post ID's"
+#~ msgstr "ID публікацій"
+
+#~ msgid "Enter comma separated ID's of the posts that you want to show"
+#~ msgstr ""
+#~ "Введіть ID публікацій, що будуть відображатися, відділяючи їх комами"
+
+#~ msgid "Display author?"
+#~ msgstr "Відображати автора"
+
+#~ msgid "Display avatar?"
+#~ msgstr "Відображати аватар"
+
+#~ msgid "Avatar size"
+#~ msgstr "Розмір аватару"
+
+#~ msgid "Avatar size (in pixels)"
+#~ msgstr "Розміри аватару (у пікселях):"
+
+#~ msgid "Part of content"
+#~ msgstr "Частина вмісту"
+
+#~ msgid "Full content"
+#~ msgstr "Увесь вміст"
+
+#~ msgid "Post content"
+#~ msgstr "Вміст публікації"
+
+#~ msgid "Choose to display a part or full content"
+#~ msgstr ""
+#~ "Виберіть, скільки вмісту публікації відображати - частково чи повністю."
+
+#~ msgid "Content Length"
+#~ msgstr "Довжина вмісту"
+
+#~ msgid "Insert the number of words you want to show in the post content."
+#~ msgstr ""
+#~ "Введіть максимальну кількість слів для вмісту публікації, що "
+#~ "відображатиметься."
+
+#~ msgid "Template"
+#~ msgstr "Шаблон"
+
+#~ msgid "Shortcode template"
+#~ msgstr "Шаблон шорткоду"
+
+#~ msgid "Author's name"
+#~ msgstr "Ім'я автора"
+
+#~ msgid "Author's avatar"
+#~ msgstr "Аватар автора"
+
+#~ msgid "Author's email"
+#~ msgstr "Електронна адреса автора"
+
+#~ msgid "Author's URL"
+#~ msgstr "Посилання автора"
+
+#~ msgid "Author's name (Testimonials only)"
+#~ msgstr "Ім'я автора (лише для Відгуків)"
+
+#~ msgid "Author's email (Testimonials only)"
+#~ msgstr "Електронна адреса автора (лише для Відгуків)"
+
+#~ msgid "Author's URL (Testimonials only)"
+#~ msgstr "Посилання автора (лише для Відгуків)"
+
+#~ msgid "Cherry Testimonials"
+#~ msgstr "Відгуки Cherry"
+
+#~ msgid "Your site's most recent Testimonials."
+#~ msgstr "Найновіші відгуки на вашому сайті."
+
+#~ msgid "No Order"
+#~ msgstr "Порядку немає"
+
+#~ msgid "Entry ID"
+#~ msgstr "ID запису"
+
+#~ msgid "Date Added"
+#~ msgstr "Дата створення"
+
+#~ msgid "Attributes Order"
+#~ msgstr "Порядок атрибутів"
+
+#~ msgid "Random Order"
+#~ msgstr "Випадковий порядок"
+
+#~ msgid "Author's avatar (Testimonials only)"
+#~ msgstr "Аватар автора (лише для Відгуків)"

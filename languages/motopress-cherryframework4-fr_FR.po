@@ -1,0 +1,643 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: motopress-cherryframework4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-05 19:21+0200\n"
+"PO-Revision-Date: 2015-11-05 19:21+0200\n"
+"Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
+"Language-Team: Cherry Team <support@cherryframework.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/custom-cherry-shortcodes.php:90
+msgid "Fixed Width"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:91
+msgid "Full Width"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:94
+msgid "Width Type"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:95
+msgid "Select Width Type"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:100 inc/custom-cherry-shortcodes.php:129
+msgid "None"
+msgstr "Aucun"
+
+#: inc/custom-cherry-shortcodes.php:101 inc/custom-cherry-shortcodes.php:130
+msgid "Color/Image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:102
+msgid "Parallax Image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:103
+msgid "Parallax Video"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:106 inc/custom-cherry-shortcodes.php:133
+msgid "Background Type"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:107 inc/custom-cherry-shortcodes.php:134
+msgid "Select Background Type"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:111
+msgid "Anchor"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:112
+msgid "This option defines menu item marker."
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:116
+msgid "Class"
+msgstr "Classe"
+
+#: inc/custom-cherry-shortcodes.php:117
+msgid "Extra CSS class"
+msgstr "Сlasse CSS Extra"
+
+#: inc/custom-cherry-shortcodes.php:391
+msgid "Click to set this value"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:426
+msgid "No preset"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:427
+msgid "Primary"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:428
+msgid "Secondary"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:429
+msgid "Gray"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:430
+msgid "Primary border"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:431
+msgid "Secondary border"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:432
+msgid "Gray border"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:435
+msgid "Styling preset"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:436
+msgid "Select styling preset"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:442
+msgid "Background Color"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:443
+msgid "Select background color"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:448 inc/custom-cherry-shortcodes.php:509
+msgid "Background Image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:449 inc/custom-cherry-shortcodes.php:510
+msgid "Upload background image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:454
+msgid "Top Left"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:455
+msgid "Top Center"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:456
+msgid "Top Right"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:457
+msgid "Middle Left"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:458
+msgid "Middle Center"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:459
+msgid "Middle Right"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:460
+msgid "Bottom Left"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:461
+msgid "Bottom Center"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:462
+msgid "Bottom Right"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:465
+msgid "Background image position"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:466
+msgid "Select background image position"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:471
+msgid "No Repeat"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:472
+msgid "Repeat All"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:473
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:474
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:477
+msgid "Background image repeat"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:478
+msgid "Select background image repeat"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:483
+msgid "Scroll normally"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:484
+msgid "Fixed in place"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:487
+msgid "Background image attachment"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:488
+msgid "Select background image attachment"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:493
+msgid "Auto"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:494
+msgid "Cover"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:495
+msgid "Contain"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:498
+msgid "Background image size"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:499
+msgid "Select background image size"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:518 inc/custom-cherry-shortcodes.php:575
+msgid "Parallax speed"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:519 inc/custom-cherry-shortcodes.php:576
+msgid "Parallax speed value (s)"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:524 inc/custom-cherry-shortcodes.php:581
+#: motopress-cherryframework4.php:418
+msgid "Yes"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:525 inc/custom-cherry-shortcodes.php:582
+#: motopress-cherryframework4.php:419
+msgid "No"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:528 inc/custom-cherry-shortcodes.php:585
+msgid "Parallax invert"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:529 inc/custom-cherry-shortcodes.php:586
+msgid "Parallax invert direction move"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:537
+msgid "Parallax container min-height"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:538
+msgid "Container min-height value (px)"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:548
+msgid "Poster"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:549
+msgid "Upload poster image"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:554
+msgid "mp4 file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:555
+msgid "URL to mp4 video-file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:560
+msgid "webm file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:561
+msgid "URL to webm video-file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:566
+msgid "ogv file"
+msgstr ""
+
+#: inc/custom-cherry-shortcodes.php:567
+msgid "URL to ogv video-file"
+msgstr ""
+
+#: motopress-cherryframework4.php:209
+msgid "Content"
+msgstr "Contenu"
+
+#: motopress-cherryframework4.php:497
+msgid "Extra small devices (Phones)"
+msgstr ""
+
+#: motopress-cherryframework4.php:501
+msgid "Small devices (Tablets)"
+msgstr ""
+
+#: motopress-cherryframework4.php:505
+msgid "Medium devices (Desktops)"
+msgstr ""
+
+#: motopress-cherryframework4.php:509
+msgid "Large devices (Desktops)"
+msgstr ""
+
+#~ msgid "Title"
+#~ msgstr "Titre"
+
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Vignette "
+
+#~ msgid "Testimonial Options"
+#~ msgstr "Options de Témoignages"
+
+#~ msgid "Name:"
+#~ msgstr "Nom:"
+
+#~ msgid "Enter author's name."
+#~ msgstr "Entrez le nom de l'auteur."
+
+#~ msgid "E-mail:"
+#~ msgstr "Adresse électronique:"
+
+#~ msgid "Enter an e-mail address."
+#~ msgstr "Entrez une Adresse électronique."
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#~ msgid "Enter the URL."
+#~ msgstr "Saisir l'URL."
+
+#~ msgid "Title:"
+#~ msgstr "Titre:"
+
+#~ msgid "Limit:"
+#~ msgstr "Limite:"
+
+#~ msgid "Image Size (in pixels):"
+#~ msgstr "Taille de l'Image (en pixels):"
+
+#~ msgid "Display Author"
+#~ msgstr "Afficher l’Auteur"
+
+#~ msgid "Display Avatar"
+#~ msgstr "Afficher l'Avatar"
+
+#~ msgid "Specific ID:"
+#~ msgstr "ID spécifique:"
+
+#~ msgid "Testimonials Post IDs, separated by commas."
+#~ msgstr "IDs d'articles Témoignages, séparées par des virgules."
+
+#~ msgid "Order By:"
+#~ msgstr "Trier par:"
+
+#~ msgid "Order Direction:"
+#~ msgstr "Direction de l'Ordre"
+
+#~ msgid "Post content:"
+#~ msgstr "Contenu de l'article"
+
+#~ msgid "Content Length:"
+#~ msgstr "Longueur du Contenu:"
+
+#~ msgid "Template:"
+#~ msgstr "Modèle:"
+
+#~ msgid "Custom CSS Class:"
+#~ msgstr "Classe CSS Personalisée:"
+
+#~ msgid "Testimonials posts"
+#~ msgstr "Articles témoignages"
+
+#~ msgid ""
+#~ "You can choose if you want to display sidebars and how you want to "
+#~ "display them."
+#~ msgstr ""
+#~ "Vous pouvez choisir si vous voulez afficher des barres latérales et la "
+#~ "façon dont vous souhaitez les afficher."
+
+#~ msgid "Left sidebar"
+#~ msgstr "Barre latérale gauche"
+
+#~ msgid "Right sidebar"
+#~ msgstr "Barre latérale droite"
+
+#~ msgid "Left and right sidebar"
+#~ msgstr "Barre latérale gauche et droite"
+
+#~ msgid "Two sidebars on the left"
+#~ msgstr "Deux barres latérales sur le côté gauche"
+
+#~ msgid "Two sidebars on the right"
+#~ msgstr "Deux barres latérales sur le côté droit"
+
+#~ msgid "No sidebar"
+#~ msgstr "Sans barre latérale"
+
+#~ msgid "Testimonials"
+#~ msgstr "Témoignages"
+
+#~ msgid "Testimonial"
+#~ msgstr "Témoignage"
+
+#~ msgid "Add New"
+#~ msgstr "Ajouter "
+
+#~ msgid "Add New Testimonial"
+#~ msgstr "Ajouter un Nouveau Témoignage"
+
+#~ msgid "Edit Testimonial"
+#~ msgstr "Modifier le Témoignage"
+
+#~ msgid "New Testimonial"
+#~ msgstr "Nouveau Témoignage"
+
+#~ msgid "View Testimonial"
+#~ msgstr "Voir le Témoignage"
+
+#~ msgid "Search Testimonials"
+#~ msgstr "Recherche  des Témoignages"
+
+#~ msgid "No testimonials found"
+#~ msgstr "Aucun témoignage trouvé"
+
+#~ msgid "No testimonials found in trash"
+#~ msgstr "Aucun témoignage trouvé dans la corbeille"
+
+#~ msgid "Testimonials Categories"
+#~ msgstr "Catégories de Témoignages "
+
+#~ msgid "Edit Category"
+#~ msgstr "Modifier une Catégorie"
+
+#~ msgid "Search Categories"
+#~ msgstr "Recherche des Catégories"
+
+#~ msgid "Popular Categories"
+#~ msgstr "Catégories Populaires"
+
+#~ msgid "All Categories"
+#~ msgstr "Toutes les catégories"
+
+#~ msgid "Update Category"
+#~ msgstr "Mise à jour de Catégorie"
+
+#~ msgid "Add New Category"
+#~ msgstr "Ajouter une Nouvelle Catégorie "
+
+#~ msgid "New Category Name"
+#~ msgstr "Nom de la Nouvelle Catégorie"
+
+#~ msgid "Separate categories with commas"
+#~ msgstr "Catégories séparées par des virgules"
+
+#~ msgid "Add or remove categories"
+#~ msgstr "Ajouter ou supprimer des catégories"
+
+#~ msgid "Choose from the most used categories"
+#~ msgstr "Choisissez parmi les catégories les plus utilisées"
+
+#~ msgid "No categories found."
+#~ msgstr "Aucune catégorie trouvée."
+
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgid "Limit"
+#~ msgstr "Limite"
+
+#~ msgid "Maximum number of posts."
+#~ msgstr "Nombre maximal d'articles."
+
+#~ msgid "Descending"
+#~ msgstr "Descendant"
+
+#~ msgid "Ascending"
+#~ msgstr "Ascendant "
+
+#~ msgid "Order"
+#~ msgstr "Ordre"
+
+#~ msgid "Posts order"
+#~ msgstr "Ordre des articles"
+
+#~ msgid "Post ID"
+#~ msgstr "ID de l'article"
+
+#~ msgid "Post author"
+#~ msgstr "Auteur de l'article"
+
+#~ msgid "Post title"
+#~ msgstr "Titre de l'article"
+
+#~ msgid "Post slug"
+#~ msgstr "Identifiant de l'article"
+
+#~ msgid "Last modified date"
+#~ msgstr "Dernière date de modification"
+
+#~ msgid "Post parent"
+#~ msgstr "Article Parent"
+
+#~ msgid "Random"
+#~ msgstr "Aléatoire"
+
+#~ msgid "Comments number"
+#~ msgstr "Nombre de commentaires"
+
+#~ msgid "Menu order"
+#~ msgstr "Ordre du menu"
+
+#~ msgid "Meta key values"
+#~ msgstr "Meta key values"
+
+#~ msgid "Order by"
+#~ msgstr "Trier par"
+
+#~ msgid "Order posts by"
+#~ msgstr "Trier des articles par"
+
+#~ msgid "Category"
+#~ msgstr "Catégorie"
+
+#~ msgid "Select category to show testimonials from"
+#~ msgstr "Sélectionnez la catégorie des témoignages à afficher"
+
+#~ msgid "Post ID's"
+#~ msgstr "IDs d'article"
+
+#~ msgid "Enter comma separated ID's of the posts that you want to show"
+#~ msgstr "Entrez ID's d'articles à afficher séparés par des virgules "
+
+#~ msgid "Display author?"
+#~ msgstr "Afficher l’Auteur"
+
+#~ msgid "Display avatar?"
+#~ msgstr "Afficher l'avatar?"
+
+#~ msgid "Avatar size"
+#~ msgstr "Taille de l'avatar"
+
+#~ msgid "Avatar size (in pixels)"
+#~ msgstr "Taille de l'avatar (en pixels)"
+
+#~ msgid "Part of content"
+#~ msgstr "Partie du contenu"
+
+#~ msgid "Full content"
+#~ msgstr "Contenu complet"
+
+#~ msgid "Post content"
+#~ msgstr "Contenu de l'article"
+
+#~ msgid "Choose to display a part or full content"
+#~ msgstr ""
+#~ "Choisissez si vous voulez afficher une partie du contenu ou le contenu "
+#~ "complet"
+
+#~ msgid "Content Length"
+#~ msgstr "Longueur du Contenu:"
+
+#~ msgid "Insert the number of words you want to show in the post content."
+#~ msgstr ""
+#~ "Insérez le nombre de mots que vous voulez afficher dans le contenu "
+#~ "d'articles."
+
+#~ msgid "Template"
+#~ msgstr "Modèle"
+
+#~ msgid "Shortcode template"
+#~ msgstr "Modèle de shortcode"
+
+#~ msgid "Author's name"
+#~ msgstr "Nom de l'auteur"
+
+#~ msgid "Author's avatar"
+#~ msgstr "Avatar de l'auteur"
+
+#~ msgid "Author's email"
+#~ msgstr "Email de l'auteur"
+
+#~ msgid "Author's URL"
+#~ msgstr "URL de l'auteur"
+
+#~ msgid "Author's name (Testimonials only)"
+#~ msgstr "Nom de l'auteur (Témoignages seulement)"
+
+#~ msgid "Author's email (Testimonials only)"
+#~ msgstr "Email de l'auteur (Témoignages seulement)"
+
+#~ msgid "Author's URL (Testimonials only)"
+#~ msgstr "URL de l'auteur (Témoignages seulement)"
+
+#~ msgid "Cherry Testimonials"
+#~ msgstr "Témoignages Cherry"
+
+#~ msgid "Your site's most recent Testimonials."
+#~ msgstr "Témoignages les plus récents de votre site."
+
+#~ msgid "No Order"
+#~ msgstr "No Order"
+
+#~ msgid "Entry ID"
+#~ msgstr "ID d'entrée"
+
+#~ msgid "Date Added"
+#~ msgstr "Date Ajoutée"
+
+#~ msgid "Attributes Order"
+#~ msgstr "Attributes Order"
+
+#~ msgid "Random Order"
+#~ msgstr "Ordre Aléatoire"
+
+#~ msgid "Author's avatar (Testimonials only)"
+#~ msgstr "Avatar de l'auteur (Témoignages seulement)"
