@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: motopress-cherryframework4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-05 19:21+0200\n"
-"PO-Revision-Date: 2015-11-05 19:21+0200\n"
+"POT-Creation-Date: 2015-12-09 15:01+0200\n"
+"PO-Revision-Date: 2015-12-09 15:01+0200\n"
 "Last-Translator: J.L.Dokter <jldokter@gmail.com>\n"
 "Language-Team: Cherry Team <support@cherryframework.com>\n"
 "Language: de_DE\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
 "_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
@@ -22,19 +22,19 @@ msgstr ""
 
 #: inc/custom-cherry-shortcodes.php:90
 msgid "Fixed Width"
-msgstr ""
+msgstr "Fixierte Breite"
 
 #: inc/custom-cherry-shortcodes.php:91
 msgid "Full Width"
-msgstr ""
+msgstr "Vollbild"
 
 #: inc/custom-cherry-shortcodes.php:94
 msgid "Width Type"
-msgstr ""
+msgstr "Breite-Typ"
 
 #: inc/custom-cherry-shortcodes.php:95
 msgid "Select Width Type"
-msgstr ""
+msgstr "Wählen Sie Breitentyp"
 
 #: inc/custom-cherry-shortcodes.php:100 inc/custom-cherry-shortcodes.php:129
 msgid "None"
@@ -42,31 +42,31 @@ msgstr "Kein"
 
 #: inc/custom-cherry-shortcodes.php:101 inc/custom-cherry-shortcodes.php:130
 msgid "Color/Image"
-msgstr ""
+msgstr "Farbe/Bild"
 
 #: inc/custom-cherry-shortcodes.php:102
 msgid "Parallax Image"
-msgstr ""
+msgstr "Parallax-Bild"
 
 #: inc/custom-cherry-shortcodes.php:103
 msgid "Parallax Video"
-msgstr ""
+msgstr "Parallax  Video"
 
 #: inc/custom-cherry-shortcodes.php:106 inc/custom-cherry-shortcodes.php:133
 msgid "Background Type"
-msgstr ""
+msgstr "Hintergrundtyp"
 
 #: inc/custom-cherry-shortcodes.php:107 inc/custom-cherry-shortcodes.php:134
 msgid "Select Background Type"
-msgstr ""
+msgstr "Hintergrundtyp auswählen"
 
 #: inc/custom-cherry-shortcodes.php:111
 msgid "Anchor"
-msgstr ""
+msgstr "Anker"
 
 #: inc/custom-cherry-shortcodes.php:112
 msgid "This option defines menu item marker."
-msgstr ""
+msgstr "Diese Option definiert Menü-Element-Marker."
 
 #: inc/custom-cherry-shortcodes.php:116
 msgid "Class"
@@ -76,251 +76,251 @@ msgstr "Class"
 msgid "Extra CSS class"
 msgstr "Extra CSS-Class"
 
-#: inc/custom-cherry-shortcodes.php:391
+#: inc/custom-cherry-shortcodes.php:392
 msgid "Click to set this value"
-msgstr ""
-
-#: inc/custom-cherry-shortcodes.php:426
-msgid "No preset"
-msgstr ""
+msgstr "Klicken, um diesen Wert festzustellen"
 
 #: inc/custom-cherry-shortcodes.php:427
-msgid "Primary"
-msgstr ""
+msgid "No preset"
+msgstr "Keine Voreinstellung"
 
 #: inc/custom-cherry-shortcodes.php:428
-msgid "Secondary"
-msgstr ""
+msgid "Primary"
+msgstr "Primär"
 
 #: inc/custom-cherry-shortcodes.php:429
-msgid "Gray"
-msgstr ""
+msgid "Secondary"
+msgstr "Sekundär"
 
 #: inc/custom-cherry-shortcodes.php:430
-msgid "Primary border"
-msgstr ""
+msgid "Gray"
+msgstr "Grau"
 
 #: inc/custom-cherry-shortcodes.php:431
-msgid "Secondary border"
-msgstr ""
+msgid "Primary border"
+msgstr "Primärer Grenzen"
 
 #: inc/custom-cherry-shortcodes.php:432
-msgid "Gray border"
-msgstr ""
+msgid "Secondary border"
+msgstr "Sekundärer Grenzen"
 
-#: inc/custom-cherry-shortcodes.php:435
-msgid "Styling preset"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:433
+msgid "Gray border"
+msgstr "Graue Grenzen"
 
 #: inc/custom-cherry-shortcodes.php:436
-msgid "Select styling preset"
-msgstr ""
+msgid "Styling preset"
+msgstr "Styling voreingestellt"
 
-#: inc/custom-cherry-shortcodes.php:442
-msgid "Background Color"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:437
+msgid "Select styling preset"
+msgstr "Design-Voreinstellung auswählen"
 
 #: inc/custom-cherry-shortcodes.php:443
-msgid "Select background color"
-msgstr ""
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
 
-#: inc/custom-cherry-shortcodes.php:448 inc/custom-cherry-shortcodes.php:509
-msgid "Background Image"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:444
+msgid "Select background color"
+msgstr "Hintergrundfarbe auswählen"
 
 #: inc/custom-cherry-shortcodes.php:449 inc/custom-cherry-shortcodes.php:510
-msgid "Upload background image"
-msgstr ""
+msgid "Background Image"
+msgstr "Hintergrundbild"
 
-#: inc/custom-cherry-shortcodes.php:454
-msgid "Top Left"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:450 inc/custom-cherry-shortcodes.php:511
+msgid "Upload background image"
+msgstr "Hintergrundbild hochladen"
 
 #: inc/custom-cherry-shortcodes.php:455
-msgid "Top Center"
-msgstr ""
+msgid "Top Left"
+msgstr "Oben links"
 
 #: inc/custom-cherry-shortcodes.php:456
-msgid "Top Right"
-msgstr ""
+msgid "Top Center"
+msgstr "Oben zentriert"
 
 #: inc/custom-cherry-shortcodes.php:457
-msgid "Middle Left"
-msgstr ""
+msgid "Top Right"
+msgstr "Oben rechts"
 
 #: inc/custom-cherry-shortcodes.php:458
-msgid "Middle Center"
-msgstr ""
+msgid "Middle Left"
+msgstr "Mitte links"
 
 #: inc/custom-cherry-shortcodes.php:459
-msgid "Middle Right"
-msgstr ""
+msgid "Middle Center"
+msgstr "Mitte zentriert"
 
 #: inc/custom-cherry-shortcodes.php:460
-msgid "Bottom Left"
-msgstr ""
+msgid "Middle Right"
+msgstr "Mitte rechts"
 
 #: inc/custom-cherry-shortcodes.php:461
-msgid "Bottom Center"
-msgstr ""
+msgid "Bottom Left"
+msgstr "Unten links"
 
 #: inc/custom-cherry-shortcodes.php:462
-msgid "Bottom Right"
-msgstr ""
+msgid "Bottom Center"
+msgstr "Unten zentriert"
 
-#: inc/custom-cherry-shortcodes.php:465
-msgid "Background image position"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:463
+msgid "Bottom Right"
+msgstr "Unten rechts"
 
 #: inc/custom-cherry-shortcodes.php:466
-msgid "Select background image position"
-msgstr ""
+msgid "Background image position"
+msgstr "Hintergrundbild-Position"
 
-#: inc/custom-cherry-shortcodes.php:471
-msgid "No Repeat"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:467
+msgid "Select background image position"
+msgstr "Position des Hintergrundbildes auswählen"
 
 #: inc/custom-cherry-shortcodes.php:472
-msgid "Repeat All"
-msgstr ""
+msgid "No Repeat"
+msgstr "Nicht wiederholen"
 
 #: inc/custom-cherry-shortcodes.php:473
-msgid "Repeat Horizontally"
-msgstr ""
+msgid "Repeat All"
+msgstr "Alles wiederholen"
 
 #: inc/custom-cherry-shortcodes.php:474
-msgid "Repeat Vertically"
-msgstr ""
+msgid "Repeat Horizontally"
+msgstr "Horizontal wiederholen"
 
-#: inc/custom-cherry-shortcodes.php:477
-msgid "Background image repeat"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:475
+msgid "Repeat Vertically"
+msgstr "Vertikal wiederholen"
 
 #: inc/custom-cherry-shortcodes.php:478
-msgid "Select background image repeat"
-msgstr ""
+msgid "Background image repeat"
+msgstr "Hintergrundbild wiederholen"
 
-#: inc/custom-cherry-shortcodes.php:483
-msgid "Scroll normally"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:479
+msgid "Select background image repeat"
+msgstr "Hintergrundbild wiederholen wählen"
 
 #: inc/custom-cherry-shortcodes.php:484
-msgid "Fixed in place"
-msgstr ""
+msgid "Scroll normally"
+msgstr "Normales Scrollen"
 
-#: inc/custom-cherry-shortcodes.php:487
-msgid "Background image attachment"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:485
+msgid "Fixed in place"
+msgstr "Am Platz fixiert"
 
 #: inc/custom-cherry-shortcodes.php:488
-msgid "Select background image attachment"
-msgstr ""
+msgid "Background image attachment"
+msgstr "Anhangverhalten des Hintergrundbildes"
 
-#: inc/custom-cherry-shortcodes.php:493
-msgid "Auto"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:489
+msgid "Select background image attachment"
+msgstr "Anhangverhalten des Hintergrundbildes wählen"
 
 #: inc/custom-cherry-shortcodes.php:494
-msgid "Cover"
-msgstr ""
+msgid "Auto"
+msgstr "Automatisch"
 
 #: inc/custom-cherry-shortcodes.php:495
-msgid "Contain"
-msgstr ""
+msgid "Cover"
+msgstr "bedecken"
 
-#: inc/custom-cherry-shortcodes.php:498
-msgid "Background image size"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:496
+msgid "Contain"
+msgstr "Beinhaltet"
 
 #: inc/custom-cherry-shortcodes.php:499
-msgid "Select background image size"
-msgstr ""
+msgid "Background image size"
+msgstr "Hintergrundbild-Größe"
 
-#: inc/custom-cherry-shortcodes.php:518 inc/custom-cherry-shortcodes.php:575
-msgid "Parallax speed"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:500
+msgid "Select background image size"
+msgstr "Wählen Sie Hintergrundbildsgröße"
 
 #: inc/custom-cherry-shortcodes.php:519 inc/custom-cherry-shortcodes.php:576
-msgid "Parallax speed value (s)"
-msgstr ""
+msgid "Parallax speed"
+msgstr "Parallax-Geschwindigkeit"
 
-#: inc/custom-cherry-shortcodes.php:524 inc/custom-cherry-shortcodes.php:581
-#: motopress-cherryframework4.php:418
-msgid "Yes"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:520 inc/custom-cherry-shortcodes.php:577
+msgid "Parallax speed value (s)"
+msgstr "Parallax-Geschwindigkeitswert (s)"
 
 #: inc/custom-cherry-shortcodes.php:525 inc/custom-cherry-shortcodes.php:582
-#: motopress-cherryframework4.php:419
-msgid "No"
-msgstr ""
+#: motopress-cherryframework4.php:431
+msgid "Yes"
+msgstr "Ja"
 
-#: inc/custom-cherry-shortcodes.php:528 inc/custom-cherry-shortcodes.php:585
-msgid "Parallax invert"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:526 inc/custom-cherry-shortcodes.php:583
+#: motopress-cherryframework4.php:432
+msgid "No"
+msgstr "Nein"
 
 #: inc/custom-cherry-shortcodes.php:529 inc/custom-cherry-shortcodes.php:586
-msgid "Parallax invert direction move"
-msgstr ""
+msgid "Parallax invert"
+msgstr "Parallax umkehren"
 
-#: inc/custom-cherry-shortcodes.php:537
-msgid "Parallax container min-height"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:530 inc/custom-cherry-shortcodes.php:587
+msgid "Parallax invert direction move"
+msgstr "Parallax Bewegung in umgekehrte Richtung "
 
 #: inc/custom-cherry-shortcodes.php:538
-msgid "Container min-height value (px)"
-msgstr ""
+msgid "Parallax container min-height"
+msgstr "Min-Höhe von Parallax Container "
 
-#: inc/custom-cherry-shortcodes.php:548
-msgid "Poster"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:539
+msgid "Container min-height value (px)"
+msgstr "Min-Höhenwert (px) von Container"
 
 #: inc/custom-cherry-shortcodes.php:549
-msgid "Upload poster image"
-msgstr ""
+msgid "Poster"
+msgstr "Poster"
 
-#: inc/custom-cherry-shortcodes.php:554
-msgid "mp4 file"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:550
+msgid "Upload poster image"
+msgstr "Poster Bild hochladen"
 
 #: inc/custom-cherry-shortcodes.php:555
-msgid "URL to mp4 video-file"
-msgstr ""
+msgid "mp4 file"
+msgstr "MP4-Datei"
 
-#: inc/custom-cherry-shortcodes.php:560
-msgid "webm file"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:556
+msgid "URL to mp4 video-file"
+msgstr "URL zur mp4 Video-Datei"
 
 #: inc/custom-cherry-shortcodes.php:561
-msgid "URL to webm video-file"
-msgstr ""
+msgid "webm file"
+msgstr "WEBM-Datei"
 
-#: inc/custom-cherry-shortcodes.php:566
-msgid "ogv file"
-msgstr ""
+#: inc/custom-cherry-shortcodes.php:562
+msgid "URL to webm video-file"
+msgstr "URL zur webm-Video-Datei"
 
 #: inc/custom-cherry-shortcodes.php:567
-msgid "URL to ogv video-file"
-msgstr ""
+msgid "ogv file"
+msgstr "Ogv-Datei"
 
-#: motopress-cherryframework4.php:209
+#: inc/custom-cherry-shortcodes.php:568
+msgid "URL to ogv video-file"
+msgstr "URL zur ogv Video-Datei"
+
+#: motopress-cherryframework4.php:219
 msgid "Content"
 msgstr "Inhalt"
 
-#: motopress-cherryframework4.php:497
+#: motopress-cherryframework4.php:520
 msgid "Extra small devices (Phones)"
-msgstr ""
+msgstr "Sehr kleine Geräte (Handys)"
 
-#: motopress-cherryframework4.php:501
+#: motopress-cherryframework4.php:524
 msgid "Small devices (Tablets)"
-msgstr ""
+msgstr "Kleine Geräte (Tabletten)"
 
-#: motopress-cherryframework4.php:505
+#: motopress-cherryframework4.php:528
 msgid "Medium devices (Desktops)"
-msgstr ""
+msgstr "Mittlere Geräte (Desktops)"
 
-#: motopress-cherryframework4.php:509
+#: motopress-cherryframework4.php:532
 msgid "Large devices (Desktops)"
-msgstr ""
+msgstr "Große Geräte (Desktops)"
 
 #~ msgid "Title"
 #~ msgstr "Titel"

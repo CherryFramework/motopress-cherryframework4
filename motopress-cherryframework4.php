@@ -35,6 +35,7 @@ class MPCE_Cherry4 {
 		add_action( 'mp_library', array( $this, 'mpce_cherry4_library_extend' ), 11, 1);
 
 		add_action( 'plugins_loaded', array( $this, 'constants' ), 1 );
+		add_action( 'plugins_loaded', array( $this, 'lang' ), 2 );
 		add_action( 'plugins_loaded', array( $this, 'mpce_cherry4_plugins_loaded' ), 11 );
 		add_action( 'plugins_loaded', array( $this, 'admin' ), 11 );
 
@@ -57,6 +58,15 @@ class MPCE_Cherry4 {
 	public function constants() {
 		define( 'MOTO_CHERRY4_VERSION', '1.1.6' );
 		define( 'MOTO_CHERRY4_SLUG', basename( dirname( __FILE__ ) ) );
+	}
+
+	/**
+	 * Loads the translation files.
+	 *
+	 * @since 1.1.7
+	 */
+	public function lang() {
+		load_plugin_textdomain( 'motopress-cherryframework4', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 
 	public function mpce_cherry4_wp_print_styles() {
@@ -206,7 +216,7 @@ class MPCE_Cherry4 {
 
 				$params['content'] = array(
 					'type' => 'longtext-tinymce',
-					'label' => __( 'Content', 'cherry-shortcodes' ),
+					'label' => __( 'Content', 'motopress-cherryframework4' ),
 					'text' => empty($motopressCELang) ? 'Open in WordPress Editor' : $motopressCELang->CEOpenInWPEditor,
 					'default' => $shortcode_content,
 					'saveInContent' => 'true'

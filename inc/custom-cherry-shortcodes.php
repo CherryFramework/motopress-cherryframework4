@@ -87,34 +87,34 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 					'type' => array(
 						'type'   => 'select',
 						'values' => array(
-							'fixed-width' => __( 'Fixed Width', 'cherry-shortcodes' ),
-							'full-width'  => __( 'Full Width', 'cherry-shortcodes' ),
+							'fixed-width' => __( 'Fixed Width', 'motopress-cherryframework4' ),
+							'full-width'  => __( 'Full Width', 'motopress-cherryframework4' ),
 						),
 						'default' => 'full-width',
-						'name'    => __( 'Width Type', 'cherry-shortcodes' ),
-						'desc'    => __( 'Select Width Type', 'cherry-shortcodes' ),
+						'name'    => __( 'Width Type', 'motopress-cherryframework4' ),
+						'desc'    => __( 'Select Width Type', 'motopress-cherryframework4' ),
 					),
 					'bg_type' => array(
 						'type'   => 'select',
 						'values' => array(
-							'none'           => __( 'None', 'cherry-shortcodes' ),
-							'image'          => __( 'Color/Image', 'cherry-shortcodes' ),
-							'parallax_image' => __( 'Parallax Image', 'cherry-shortcodes' ),
-							'parallax_video' => __( 'Parallax Video', 'cherry-shortcodes' ),
+							'none'           => __( 'None', 'motopress-cherryframework4' ),
+							'image'          => __( 'Color/Image', 'motopress-cherryframework4' ),
+							'parallax_image' => __( 'Parallax Image', 'motopress-cherryframework4' ),
+							'parallax_video' => __( 'Parallax Video', 'motopress-cherryframework4' ),
 						),
 						'default' => 'none',
-						'name'    => __( 'Background Type', 'cherry-shortcodes' ),
-						'desc'    => __( 'Select Background Type', 'cherry-shortcodes' ),
+						'name'    => __( 'Background Type', 'motopress-cherryframework4' ),
+						'desc'    => __( 'Select Background Type', 'motopress-cherryframework4' ),
 					),
 					'anchor' => array(
 						'default' => '',
-						'name'    => __( 'Anchor', 'cherry-shortcodes' ),
-						'desc'    => __( 'This option defines menu item marker.', 'cherry-shortcodes' ),
+						'name'    => __( 'Anchor', 'motopress-cherryframework4' ),
+						'desc'    => __( 'This option defines menu item marker.', 'motopress-cherryframework4' ),
 					),
 					'class' => array(
 						'default' => '',
-						'name'    => __( 'Class', 'cherry-shortcodes' ),
-						'desc'    => __( 'Extra CSS class', 'cherry-shortcodes' ),
+						'name'    => __( 'Class', 'motopress-cherryframework4' ),
+						'desc'    => __( 'Extra CSS class', 'motopress-cherryframework4' ),
 					),
 				);
 		}
@@ -126,12 +126,12 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 			return array_merge( $shortcodes[ 'col' ]['atts'], array( 'bg_type' => array(
 						'type'   => 'select',
 						'values' => array(
-							'none'  => __( 'None', 'cherry-shortcodes' ),
-							'image' => __( 'Color/Image', 'cherry-shortcodes' ),
+							'none'  => __( 'None', 'motopress-cherryframework4' ),
+							'image' => __( 'Color/Image', 'motopress-cherryframework4' ),
 						),
 						'default' => 'none',
-						'name'    => __( 'Background Type', 'cherry-shortcodes' ),
-						'desc'    => __( 'Select Background Type', 'cherry-shortcodes' ),
+						'name'    => __( 'Background Type', 'motopress-cherryframework4' ),
+						'desc'    => __( 'Select Background Type', 'motopress-cherryframework4' ),
 					) )
 				);
 		}
@@ -389,7 +389,7 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 				}
 
 				if ( isset( $attr_info['desc'] ) ) {
-					$return .= '<div class="cherry-generator-attr-desc">' . str_replace( array( '<b%value>', '<b_>' ), '<b class="cherry-generator-set-value" title="' . __( 'Click to set this value', 'cherry-shortcodes' ) . '">', $attr_info['desc'] ) . '</div>';
+					$return .= '<div class="cherry-generator-attr-desc">' . str_replace( array( '<b%value>', '<b_>' ), '<b class="cherry-generator-set-value" title="' . __( 'Click to set this value', 'motopress-cherryframework4' ) . '">', $attr_info['desc'] ) . '</div>';
 				}
 
 				$return .= '</div>';
@@ -424,80 +424,80 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 						'preset' => array(
 							'type'   => 'select',
 							'values' => array(
-								''                 => __( 'No preset', 'cherry-shortcodes' ),
-								'primary'          => __( 'Primary', 'cherry-shortcodes' ),
-								'secondary'        => __( 'Secondary', 'cherry-shortcodes' ),
-								'gray'             => __( 'Gray', 'cherry-shortcodes' ),
-								'primary-border'   => __( 'Primary border', 'cherry-shortcodes' ),
-								'secondary-border' => __( 'Secondary border', 'cherry-shortcodes' ),
-								'gray-border'      => __( 'Gray border', 'cherry-shortcodes' ),
+								''                 => __( 'No preset', 'motopress-cherryframework4' ),
+								'primary'          => __( 'Primary', 'motopress-cherryframework4' ),
+								'secondary'        => __( 'Secondary', 'motopress-cherryframework4' ),
+								'gray'             => __( 'Gray', 'motopress-cherryframework4' ),
+								'primary-border'   => __( 'Primary border', 'motopress-cherryframework4' ),
+								'secondary-border' => __( 'Secondary border', 'motopress-cherryframework4' ),
+								'gray-border'      => __( 'Gray border', 'motopress-cherryframework4' ),
 							),
 							'default' => '',
-							'name'    => __( 'Styling preset', 'cherry-shortcodes' ),
-							'desc'    => __( 'Select styling preset', 'cherry-shortcodes' ),
+							'name'    => __( 'Styling preset', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Select styling preset', 'motopress-cherryframework4' ),
 						),
 						'bg_color' => array(
 							'type'    => 'color',
 							'values'  => array(),
 							'default' => '#ffffff',
-							'name'    => __( 'Background Color', 'cherry-shortcodes' ),
-							'desc'    => __( 'Select background color', 'cherry-shortcodes' ),
+							'name'    => __( 'Background Color', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Select background color', 'motopress-cherryframework4' ),
 						),
 						'bg_image' => array(
 							'type'    => 'upload',
 							'default' => '',
-							'name'    => __( 'Background Image', 'cherry-shortcodes' ),
-							'desc'    => __( 'Upload background image', 'cherry-shortcodes' ),
+							'name'    => __( 'Background Image', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Upload background image', 'motopress-cherryframework4' ),
 						),
 						'bg_position' => array(
 							'type'   => 'select',
 							'values' => array(
-								'top-left'      => __( 'Top Left', 'cherry-shortcodes' ),
-								'top-center'    => __( 'Top Center', 'cherry-shortcodes' ),
-								'top-right'     => __( 'Top Right', 'cherry-shortcodes' ),
-								'left'          => __( 'Middle Left', 'cherry-shortcodes' ),
-								'center'        => __( 'Middle Center', 'cherry-shortcodes' ),
-								'right'         => __( 'Middle Right', 'cherry-shortcodes' ),
-								'bottom-left'   => __( 'Bottom Left', 'cherry-shortcodes' ),
-								'bottom-center' => __( 'Bottom Center', 'cherry-shortcodes' ),
-								'bottom-right'  => __( 'Bottom Right', 'cherry-shortcodes' ),
+								'top-left'      => __( 'Top Left', 'motopress-cherryframework4' ),
+								'top-center'    => __( 'Top Center', 'motopress-cherryframework4' ),
+								'top-right'     => __( 'Top Right', 'motopress-cherryframework4' ),
+								'left'          => __( 'Middle Left', 'motopress-cherryframework4' ),
+								'center'        => __( 'Middle Center', 'motopress-cherryframework4' ),
+								'right'         => __( 'Middle Right', 'motopress-cherryframework4' ),
+								'bottom-left'   => __( 'Bottom Left', 'motopress-cherryframework4' ),
+								'bottom-center' => __( 'Bottom Center', 'motopress-cherryframework4' ),
+								'bottom-right'  => __( 'Bottom Right', 'motopress-cherryframework4' ),
 							),
 							'default' => 'center',
-							'name'    => __( 'Background image position', 'cherry-shortcodes' ),
-							'desc'    => __( 'Select background image position', 'cherry-shortcodes' ),
+							'name'    => __( 'Background image position', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Select background image position', 'motopress-cherryframework4' ),
 						),
 						'bg_repeat' => array(
 							'type'   => 'select',
 							'values' => array(
-								'no-repeat' => __( 'No Repeat', 'cherry-shortcodes' ),
-								'repeat'    => __( 'Repeat All', 'cherry-shortcodes' ),
-								'repeat-x'  => __( 'Repeat Horizontally', 'cherry-shortcodes' ),
-								'repeat-y'  => __( 'Repeat Vertically', 'cherry-shortcodes' ),
+								'no-repeat' => __( 'No Repeat', 'motopress-cherryframework4' ),
+								'repeat'    => __( 'Repeat All', 'motopress-cherryframework4' ),
+								'repeat-x'  => __( 'Repeat Horizontally', 'motopress-cherryframework4' ),
+								'repeat-y'  => __( 'Repeat Vertically', 'motopress-cherryframework4' ),
 							),
 							'default' => 'no-repeat',
-							'name'    => __( 'Background image repeat', 'cherry-shortcodes' ),
-							'desc'    => __( 'Select background image repeat', 'cherry-shortcodes' ),
+							'name'    => __( 'Background image repeat', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Select background image repeat', 'motopress-cherryframework4' ),
 						),
 						'bg_attachment' => array(
 							'type'   => 'select',
 							'values' => array(
-								'scroll' => __( 'Scroll normally', 'cherry-shortcodes' ),
-								'fixed'  => __( 'Fixed in place', 'cherry-shortcodes' ),
+								'scroll' => __( 'Scroll normally', 'motopress-cherryframework4' ),
+								'fixed'  => __( 'Fixed in place', 'motopress-cherryframework4' ),
 							),
 							'default' => 'scroll',
-							'name'    => __( 'Background image attachment', 'cherry-shortcodes' ),
-							'desc'    => __( 'Select background image attachment', 'cherry-shortcodes' ),
+							'name'    => __( 'Background image attachment', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Select background image attachment', 'motopress-cherryframework4' ),
 						),
 						'bg_size' => array(
 							'type'   => 'select',
 							'values' => array(
-								'auto'    => __( 'Auto', 'cherry-shortcodes' ),
-								'cover'   => __( 'Cover', 'cherry-shortcodes' ),
-								'contain' => __( 'Contain', 'cherry-shortcodes' ),
+								'auto'    => __( 'Auto', 'motopress-cherryframework4' ),
+								'cover'   => __( 'Cover', 'motopress-cherryframework4' ),
+								'contain' => __( 'Contain', 'motopress-cherryframework4' ),
 							),
 							'default' => 'auto',
-							'name'    => __( 'Background image size', 'cherry-shortcodes' ),
-							'desc'    => __( 'Select background image size', 'cherry-shortcodes' ),
+							'name'    => __( 'Background image size', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Select background image size', 'motopress-cherryframework4' ),
 						),
 					);
 					break;
@@ -507,8 +507,8 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 						'image_src' => array(
 							'type'    => 'upload',
 							'default' => '',
-							'name'    => __( 'Background Image', 'cherry-shortcodes' ),
-							'desc'    => __( 'Upload background image', 'cherry-shortcodes' ),
+							'name'    => __( 'Background Image', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Upload background image', 'motopress-cherryframework4' ),
 						),
 						'parallax_speed' => array(
 							'type'    => 'number',
@@ -516,18 +516,18 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 							'max'     => 10,
 							'step'    => 0.1,
 							'default' => 1.5,
-							'name'    => __( 'Parallax speed', 'cherry-shortcodes' ),
-							'desc'    => __( 'Parallax speed value (s)', 'cherry-shortcodes' ),
+							'name'    => __( 'Parallax speed', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Parallax speed value (s)', 'motopress-cherryframework4' ),
 						),
 						'parallax_invert' => array(
 							'type'    => 'select',
 							'values' => array(
-								'yes' => __( 'Yes', 'cherry-shortcodes' ),
-								'no'  => __( 'No', 'cherry-shortcodes' ),
+								'yes' => __( 'Yes', 'motopress-cherryframework4' ),
+								'no'  => __( 'No', 'motopress-cherryframework4' ),
 							),
 							'default' => 'no',
-							'name'    => __( 'Parallax invert', 'cherry-shortcodes' ),
-							'desc'    => __( 'Parallax invert direction move', 'cherry-shortcodes' ),
+							'name'    => __( 'Parallax invert', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Parallax invert direction move', 'motopress-cherryframework4' ),
 						),
 						'min_height' => array(
 							'type'    => 'number',
@@ -535,8 +535,8 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 							'max'     => 1000,
 							'step'    => 1,
 							'default' => 300,
-							'name'    => __( 'Parallax container min-height', 'cherry-shortcodes' ),
-							'desc'    => __( 'Container min-height value (px)', 'cherry-shortcodes' ),
+							'name'    => __( 'Parallax container min-height', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Container min-height value (px)', 'motopress-cherryframework4' ),
 						),
 					);
 					break;
@@ -546,26 +546,26 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 						'poster' => array(
 							'type'    => 'upload',
 							'default' => '',
-							'name'    => __( 'Poster', 'cherry-shortcodes' ),
-							'desc'    => __( 'Upload poster image', 'cherry-shortcodes' ),
+							'name'    => __( 'Poster', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Upload poster image', 'motopress-cherryframework4' ),
 						),
 						'mp4' => array(
 							'type'    => 'upload',
 							'default' => '',
-							'name'    => __( 'mp4 file', 'cherry-shortcodes' ),
-							'desc'    => __( 'URL to mp4 video-file', 'cherry-shortcodes' ),
+							'name'    => __( 'mp4 file', 'motopress-cherryframework4' ),
+							'desc'    => __( 'URL to mp4 video-file', 'motopress-cherryframework4' ),
 						),
 						'webm' => array(
 							'type'    => 'upload',
 							'default' => '',
-							'name'    => __( 'webm file', 'cherry-shortcodes' ),
-							'desc'    => __( 'URL to webm video-file', 'cherry-shortcodes' ),
+							'name'    => __( 'webm file', 'motopress-cherryframework4' ),
+							'desc'    => __( 'URL to webm video-file', 'motopress-cherryframework4' ),
 						),
 						'ogv' => array(
 							'type'    => 'upload',
 							'default' => '',
-							'name'    => __( 'ogv file', 'cherry-shortcodes' ),
-							'desc'    => __( 'URL to ogv video-file', 'cherry-shortcodes' ),
+							'name'    => __( 'ogv file', 'motopress-cherryframework4' ),
+							'desc'    => __( 'URL to ogv video-file', 'motopress-cherryframework4' ),
 						),
 						'speed' => array(
 							'type'    => 'number',
@@ -573,18 +573,18 @@ if ( ! class_exists( 'Custom_Cherry_Shortcodes' ) ) {
 							'max'     => 10,
 							'step'    => 0.1,
 							'default' => 1.5,
-							'name'    => __( 'Parallax speed', 'cherry-shortcodes' ),
-							'desc'    => __( 'Parallax speed value (s)', 'cherry-shortcodes' ),
+							'name'    => __( 'Parallax speed', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Parallax speed value (s)', 'motopress-cherryframework4' ),
 						),
 						'invert' => array(
 							'type'    => 'select',
 							'values' => array(
-								'yes' => __( 'Yes', 'cherry-shortcodes' ),
-								'no'  => __( 'No', 'cherry-shortcodes' ),
+								'yes' => __( 'Yes', 'motopress-cherryframework4' ),
+								'no'  => __( 'No', 'motopress-cherryframework4' ),
 							),
 							'default' => 'no',
-							'name'    => __( 'Parallax invert', 'cherry-shortcodes' ),
-							'desc'    => __( 'Parallax invert direction move', 'cherry-shortcodes' ),
+							'name'    => __( 'Parallax invert', 'motopress-cherryframework4' ),
+							'desc'    => __( 'Parallax invert direction move', 'motopress-cherryframework4' ),
 						),
 					);
 					break;
