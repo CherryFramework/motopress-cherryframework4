@@ -44,12 +44,13 @@ class MPCE_Cherry4 {
 		add_filter( 'cherry_shortcodes_output_row_class', array( $this, 'mpce_cherry4_row_class' ) );
 		add_filter( 'cherry_shortcodes_output_row_inner_class', array( $this, 'mpce_cherry4_row_class' ) );
 
-		add_filter( 'after_setup_theme', array( $this, 'custom_cherry_shortcodes' ), 99 );
+		add_action( 'after_setup_theme', array( $this, 'custom_cherry_shortcodes' ), 99 );
 
-		if (isset($_GET['motopress-ce']) && $_GET['motopress-ce'] === '1') {
-			add_action( 'wp_enqueue_scripts', array( $this, 'mpce_cherry4_scripts' ));
+		if ( isset( $_GET['motopress-ce'] ) && $_GET['motopress-ce'] === '1' ) {
+			add_action( 'wp_enqueue_scripts', array( $this, 'mpce_cherry4_scripts' ) );
+			add_filter( 'cherry_shortcodes_use_generated_style', '__return_false' );
 		} else {
-			add_action('wp_print_styles', array( $this, 'mpce_cherry4_wp_print_styles' ));
+			add_action( 'wp_print_styles', array( $this, 'mpce_cherry4_wp_print_styles' ) );
 		}
 
 	}
