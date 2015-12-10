@@ -3,7 +3,7 @@
  * Plugin Name: MotoPress and CherryFramework 4 Integration
  * Plugin URI: http://www.getmotopress.com/
  * Description: Extend MotoPress Content Editor plugin with CherryFramework 4 shortcodes.
- * Version: 1.1.6
+ * Version: 1.1.6.1-beta
  * Author: MotoPress & Cherry Team
  * Author URI: http://www.getmotopress.com/
  * License: GPL2 or later
@@ -45,18 +45,19 @@ class MPCE_Cherry4 {
 		add_filter( 'cherry_shortcodes_output_row_class', array( $this, 'mpce_cherry4_row_class' ) );
 		add_filter( 'cherry_shortcodes_output_row_inner_class', array( $this, 'mpce_cherry4_row_class' ) );
 
-		add_filter( 'after_setup_theme', array( $this, 'custom_cherry_shortcodes' ), 99 );
+		add_action( 'after_setup_theme', array( $this, 'custom_cherry_shortcodes' ), 99 );
 
-		if (isset($_GET['motopress-ce']) && $_GET['motopress-ce'] === '1') {
-			add_action( 'wp_enqueue_scripts', array( $this, 'mpce_cherry4_scripts' ));
+		if ( isset( $_GET['motopress-ce'] ) && $_GET['motopress-ce'] === '1' ) {
+			add_action( 'wp_enqueue_scripts', array( $this, 'mpce_cherry4_scripts' ) );
+			add_filter( 'cherry_shortcodes_use_generated_style', '__return_false' );
 		} else {
-			add_action('wp_print_styles', array( $this, 'mpce_cherry4_wp_print_styles' ));
+			add_action( 'wp_print_styles', array( $this, 'mpce_cherry4_wp_print_styles' ) );
 		}
 
 	}
 
 	public function constants() {
-		define( 'MOTO_CHERRY4_VERSION', '1.1.6' );
+		define( 'MOTO_CHERRY4_VERSION', '1.1.6.1-beta' );
 		define( 'MOTO_CHERRY4_SLUG', basename( dirname( __FILE__ ) ) );
 	}
 
