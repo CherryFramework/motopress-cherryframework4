@@ -495,18 +495,44 @@ class MPCE_Cherry4 {
 					}
 				}
 
-				 //Fill group list of team shortcode
-				if ($shortcode == 'team' && ($att_id == 'group')) {
+				// Fill group list of team shortcode
+				if ( $shortcode == 'team' && ( $att_id == 'group' ) ) {
 
 					$terms = get_terms( 'group' );
 					if ( ! is_wp_error( $terms ) ) {
-						$terms_list = wp_list_pluck( $terms, 'name', 'slug' );
-						$param["list"] = $terms_list;
+						$param['list'] = wp_list_pluck( $terms, 'name', 'slug' );
 					}
 				}
 
-				if (count($param)) {
-					$params[$att_id] = $param;
+				// Fill services list of categories shortcode
+				if ( $shortcode == 'services' && ( $att_id == 'categories' ) ) {
+
+					$terms = get_terms( CHERRY_SERVICES_NAME . '_category' );
+					if ( ! is_wp_error( $terms ) ) {
+						$param['list'] = wp_list_pluck( $terms, 'name', 'slug' );
+					}
+				}
+
+				// Fill list of categories for `[cherry_blog]` shortcode
+				if ( $shortcode == 'blog' && ( $att_id == 'category' ) ) {
+
+					$terms = get_terms( 'category' );
+					if ( ! is_wp_error( $terms ) ) {
+						$param['list'] = wp_list_pluck( $terms, 'name', 'slug' );
+					}
+				}
+
+				// Fill list of categories for `[cherry_testimonials]` shortcode
+				if ( $shortcode == 'testimonials' && ( $att_id == 'category' ) ) {
+
+					$terms = get_terms( CHERRY_TESTI_NAME . '_category' );
+					if ( ! is_wp_error( $terms ) ) {
+						$param['list'] = wp_list_pluck( $terms, 'name', 'slug' );
+					}
+				}
+
+				if ( count( $param ) ) {
+					$params[ $att_id ] = $param;
 				}
 			}
 		}
