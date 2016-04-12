@@ -640,6 +640,10 @@ class MotoPress_Cherry4_Shortcode_Atts_Filter {
 			$basicClasses . ' ' .
 			((isset($atts['mp_style_classes'])) ? (trim( $atts['mp_style_classes'] )) : '');
 
+		if (method_exists('MPCEShortcode', 'handleCustomStyles')) {
+			$mpClasses .= MPCEShortcode::handleCustomStyles( ( isset($atts['mp_custom_style']) ? $atts['mp_custom_style'] : '' ), $this->prefix . $this->shortcode, true );
+		}
+
 		$out['class'] = isset($out['class']) ? ($out['class'] . ' ' . trim($mpClasses)) : trim($mpClasses);
 
 		return $out;
