@@ -582,7 +582,7 @@ class MPCE_Cherry4 {
 	private function get_icon($shortcode) {
 
 		if ( file_exists( dirname(__FILE__) . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . $shortcode . '.png' ) ) {
-			return ltrim( (str_replace( content_url(), '' , plugin_dir_url( __FILE__ ) ) . 'assets/' . $shortcode . '.png'), '/');
+			return ltrim( (str_replace( WP_CONTENT_URL, '' , plugin_dir_url( __FILE__ ) ) . 'assets/' . $shortcode . '.png'), '/');
 		}
 
 		return NULL;
