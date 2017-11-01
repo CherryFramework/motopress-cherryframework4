@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: MotoPress and CherryFramework 4 Integration
- * Plugin URI: http://www.getmotopress.com/
+ * Plugin URI: https://motopress.com/
  * Description: Extend MotoPress Content Editor plugin with CherryFramework 4 shortcodes.
- * Version: 1.1.6.3
+ * Version: 1.1.6.4
  * Author: MotoPress & Cherry Team
- * Author URI: http://www.getmotopress.com/
+ * Author URI: https://motopress.com/
  * License: GPL2 or later
  * Text Domain: motopress-cherryframework4
  */
@@ -57,7 +57,7 @@ class MPCE_Cherry4 {
 	}
 
 	public function constants() {
-		define( 'MOTO_CHERRY4_VERSION', '1.1.6.3' );
+		define( 'MOTO_CHERRY4_VERSION', '1.1.6.4' );
 		define( 'MOTO_CHERRY4_SLUG', basename( dirname( __FILE__ ) ) );
 	}
 
