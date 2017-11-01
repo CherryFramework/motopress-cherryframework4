@@ -651,13 +651,22 @@ class MotoPress_Cherry4_Shortcode_Atts_Filter {
 
 	private function isContentEditor() {
 		global $isMotoPressCEPage;
-		if (
-			(isset($isMotoPressCEPage) && $isMotoPressCEPage === TRUE) ||
-			(isset($_GET['motopress-ce']) && $_GET['motopress-ce'] === '1') ||
-			(isset($_POST['action']) && ( $_POST['action'] == 'motopress_ce_render_shortcode' ))
-		) {
+
+		$isMPCEPage = isset( $isMotoPressCEPage ) && $isMotoPressCEPage === TRUE;
+
+		if ( method_exists( 'MPCEShortcode', 'isContentEditor' ) ) {
+		    $isMPCERequest = MPCEShortcode::isContentEditor();
+        } else {
+		    $isMPCERequest = (
+                ( isset( $_GET['motopress-ce'] ) && $_GET['motopress-ce'] === '1' ) ||
+                ( isset( $_POST['action'] ) && $_POST['action'] == 'motopress_ce_render_shortcode' )
+            );
+        }
+
+		if ( $isMPCEPage || $isMPCERequest ) {
 			return true;
 		}
+
 		return false;
 	}
 }
