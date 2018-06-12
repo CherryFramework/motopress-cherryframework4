@@ -47,12 +47,7 @@ class MPCE_Cherry4 {
 
 		add_action( 'after_setup_theme', array( $this, 'custom_cherry_shortcodes' ), 99 );
 
-		if ( isset( $_GET['motopress-ce'] ) && $_GET['motopress-ce'] === '1' ) {
-			add_action( 'wp_enqueue_scripts', array( $this, 'mpce_cherry4_scripts' ) );
-			add_filter( 'cherry_shortcodes_use_generated_style', '__return_false' );
-		} else {
-			add_action( 'wp_print_styles', array( $this, 'mpce_cherry4_wp_print_styles' ) );
-		}
+		add_action('init', array($this, 'register_scripts'));
 
 	}
 
@@ -68,6 +63,15 @@ class MPCE_Cherry4 {
 	 */
 	public function lang() {
 		load_plugin_textdomain( 'motopress-cherryframework4', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	}
+
+	public function register_scripts(){
+		if ( $this->isContentEditor() ) {
+			add_action( 'wp_enqueue_scripts', array( $this, 'mpce_cherry4_scripts' ) );
+			add_filter( 'cherry_shortcodes_use_generated_style', '__return_false' );
+		} else {
+			add_action( 'wp_print_styles', array( $this, 'mpce_cherry4_wp_print_styles' ) );
+		}
 	}
 
 	public function mpce_cherry4_wp_print_styles() {
@@ -340,14 +344,6 @@ class MPCE_Cherry4 {
 			'label' => __('Button', 'domain'),
 		);*/
 
-		//remove predefined templates
-		$page_templates = array('landing_page', 'call_to_action_page', 'feature_list', 'description_page', 'service_list', 'product_page');
-		foreach ($page_templates as $page_template)
-			$motopressCELibrary->removeTemplate( MPCEShortcode::PREFIX . $page_template );
-
-		//add cherry-predefined templates
-		require_once ( plugin_dir_path( __FILE__ ) . '/inc/ce/custom-templates.php' );
-
 	}
 
 	public function mpce_cherry4_shortcode_atts() {
@@ -612,6 +608,38 @@ class MPCE_Cherry4 {
 		require_once( plugin_dir_path( __FILE__ ) . '/inc/custom-cherry-shortcodes.php' );
 	}
 
+	/**
+	 * Check is content editor for MPCE v1.x
+	 */
+	private function isContentEditorv1(){
+		global $isMotoPressCEPage;
+
+		$isMPCEPage = isset( $isMotoPressCEPage ) && $isMotoPressCEPage === TRUE;
+
+		if ( method_exists( 'MPCEShortcode', 'isContentEditor' ) ) {
+			$isMPCERequest = MPCEShortcode::isContentEditor();
+		} else {
+			$isMPCERequest = (
+				( isset( $_GET['motopress-ce'] ) && $_GET['motopress-ce'] === '1' ) ||
+				( isset( $_POST['action'] ) && $_POST['action'] == 'motopress_ce_render_shortcode' )
+			);
+		}
+
+		if ( $isMPCEPage || $isMPCERequest ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	public function isContentEditor() {
+		if (function_exists('mpceIsEditorScene')) {
+			return mpceIsEditorScene();
+		} else {
+			return $this->isContentEditorv1();
+		}
+	}
+
 }
 
 class MotoPress_Cherry4_Shortcode_Atts_Filter {
@@ -629,8 +657,7 @@ class MotoPress_Cherry4_Shortcode_Atts_Filter {
 	{
 
 		$basicClasses = trim( MPCEShortcode::getBasicClasses($this->prefix . $this->shortcode) );
-		if ( !$this->isContentEditor() && in_array( $this->shortcode, array('row', 'row_inner', 'col', 'col_inner') )
-			&& !(isset($_POST['action']) && ( $_POST['action'] == 'motopress_ce_render_template' ))) {
+		if ( !MPCE_Cherry4::instance()->isContentEditor() && in_array( $this->shortcode, array('row', 'row_inner', 'col', 'col_inner') ) ) {
 
 			$basicClasses = '';
 		}
@@ -649,26 +676,6 @@ class MotoPress_Cherry4_Shortcode_Atts_Filter {
 		return $out;
 	}
 
-	private function isContentEditor() {
-		global $isMotoPressCEPage;
-
-		$isMPCEPage = isset( $isMotoPressCEPage ) && $isMotoPressCEPage === TRUE;
-
-		if ( method_exists( 'MPCEShortcode', 'isContentEditor' ) ) {
-		    $isMPCERequest = MPCEShortcode::isContentEditor();
-        } else {
-		    $isMPCERequest = (
-                ( isset( $_GET['motopress-ce'] ) && $_GET['motopress-ce'] === '1' ) ||
-                ( isset( $_POST['action'] ) && $_POST['action'] == 'motopress_ce_render_shortcode' )
-            );
-        }
-
-		if ( $isMPCEPage || $isMPCERequest ) {
-			return true;
-		}
-
-		return false;
-	}
 }
 
 
