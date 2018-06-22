@@ -634,7 +634,7 @@ class MPCE_Cherry4 {
 
 	public function isContentEditor() {
 		if (function_exists('mpceIsEditorScene')) {
-			return mpceIsEditorScene();
+			return mpceIsEditorScene() || mpceIsEditor();
 		} else {
 			return $this->isContentEditorv1();
 		}
